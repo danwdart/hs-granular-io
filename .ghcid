@@ -1,0 +1,1 @@
+-l -ar -c "cabal repl granular-io-dev -fdev --ghc-options='-Wno-prepositive-qualified-module'" --restart granular-io.cabal --reload .env --restart cabal.project

@@ -1,0 +1,3 @@
+allow-newer: base, websockets
+
+packages: granular-io.cabal

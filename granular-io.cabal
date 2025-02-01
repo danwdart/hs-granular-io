@@ -1,0 +1,41 @@
+cabal-version:      3.4
+
+-- Newer versions complain
+name:               granular-io
+version:            0.7.0.0
+
+-- synopsis:
+-- description:
+homepage:           https://github.com/danwdart/granular-io#readme
+license:            AGPL-3.0-only
+
+-- license-file:        LICENSE
+author:             Dan Dart
+maintainer:         cabal@dandart.co.uk
+copyright:          2019 Dan Dart
+category:           Web
+build-type:         Simple
+extra-source-files: README.md
+
+library
+  hs-source-dirs:     lib
+  ghc-options:
+    -Wall -Werror -haddock -Weverything -Wno-unsafe -Wno-safe
+    -Wno-missing-import-lists -Wno-missing-export-lists
+    -Wno-implicit-prelude -Wno-missing-safe-haskell-mode
+    -Wno-missing-kind-signatures -Wno-missing-poly-kind-signatures
+    -Wno-missing-local-signatures -Wno-all-missed-specialisations
+    -Wno-missed-specialisations -Wno-missing-role-annotations
+    -Wno-missing-kind-signatures -Wno-missing-poly-kind-signatures
+    -Wno-unrecognised-warning-flags
+
+  default-language:   GHC2021
+  default-extensions: UnicodeSyntax
+  build-depends:
+    , base        >=4.19.0.0  && <4.22.0.0
+    , bytestring  ^>=0.12.2.0
+    , file-io     ^>=0.1.5
+    , filepath    ^>=1.5.4.0
+
+  -- Support older base versions
+  exposed-modules:
