@@ -19,6 +19,8 @@ extra-source-files: README.md
 
 library
   hs-source-dirs:     lib
+  if arch(javascript)
+    js-sources: jsbits/emcc-config.js
   ghc-options:
     -Wall -Werror -haddock -Weverything -Wno-unsafe -Wno-safe
     -Wno-missing-import-lists -Wno-missing-export-lists
