@@ -31,7 +31,7 @@ library
     -Wno-missing-kind-signatures -Wno-missing-poly-kind-signatures
     -Wno-unrecognised-warning-flags
 
-  default-language:   GHC2021
+  default-language:   GHC2024
   default-extensions: UnicodeSyntax
   build-depends:
     , base        >=4.19.0.0  && <4.22.0.0
