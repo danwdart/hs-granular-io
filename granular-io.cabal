@@ -36,10 +36,10 @@ library
   default-language:   GHC2024
   default-extensions: UnicodeSyntax
   build-depends:
-    , base        >=4.19.0.0  && <4.23.0.0
-    , bytestring  ^>=0.12.2.0
+    , base        >=4.19  && <4.23
+    , bytestring  ^>=0.12.2
     , file-io     ^>=0.1.5
-    , filepath    ^>=1.5.4.0
+    , filepath    ^>=1.5.4
 
   -- Support older base versions
   exposed-modules:
